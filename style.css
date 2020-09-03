@@ -1,0 +1,546 @@
+@import url('https://fonts.googleapis.com/css2?family=Ranchers&display=swap');
+/* font-family: 'Ranchers', cursive; */
+
+@import url('https://fonts.googleapis.com/css2?family=Lemonada&display=swap');
+/* font-family: 'Lemonada', cursive; */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Disable refresh on mobile */
+body {
+  overscroll-behavior-y: contain;
+
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  bottom: 0;
+}
+
+
+#links {
+  display: none;
+}
+
+/* Page indicator */
+
+
+ul {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+ul li {
+  list-style-type: none;
+  position: relative;
+  margin: 1.5em;
+  background-color: transparent;
+  padding: .6em;
+  border-radius: 100%;
+  border: 2px solid;
+}
+
+ul li:after {
+  content: "";
+  position: absolute;
+  width: 80%;
+  height: 2px;
+  top: 2em;
+  transform: rotate(90deg);
+  right: .1em;
+}
+
+ul li:last-of-type:after {
+  display: none;
+}
+
+/* Pet Snakes */
+
+section.petSnakes {
+  min-height: 100vh;
+  background-image: url("img/petSnakesBackground.jpg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.overlay {
+  width: 100%;
+  height: 100%;
+  background: black;
+  opacity: .4;
+  position: absolute;
+}
+
+.wrapper {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+
+}
+
+.wrapper span {
+  text-align: right;
+  margin-right: .2em;
+  font-size: 17em;
+  font-weight: normal;
+  text-shadow: 4px 4px 12px black;
+  font-family: 'Ranchers', cursive;
+}
+
+.petSnakes li {
+  border-color: #C5C8CC;
+}
+
+.petSnakes li:after {
+  background-color: #C39A2D;
+}
+
+.petSnakes li:first-of-type {
+  background-color: #C39A2D;
+  border-color: #C39A2D;
+}
+
+
+.pet1 {
+  color: #C5C8CC;
+}
+
+.snakes1 {
+  color: #C39A2D;
+}
+
+/* Why to Keep a Snake? */
+
+
+section.reasonsToKeepASnake {
+  min-height: 100vh;
+  background-image: url("img/reasonsToKeepASnakeBackground.jpg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.reasonsToKeepASnake h2 {
+  color: #E1D3B8;
+  font-size: 6em;
+  font-weight: normal;
+  text-shadow: 4px 4px 12px black;
+  font-family: 'Ranchers', cursive;
+  position: relative;
+}
+
+.reasonsToKeepASnake .reasons2 {
+  position: relative;
+  top: .6em;
+  left: .7em;
+}
+
+.reasonsToKeepASnake .tokeep2 {
+  position: relative;
+  top: .6em;
+  left: 2.3em;
+}
+
+.reasonsToKeepASnake .asnake2 {
+  position: relative;
+  top: .6em;
+  left: 3.45em;
+}
+
+.reasonsToKeepASnake .textbox {
+  position: absolute;
+  display: inline-block;
+  background-color: #E1D3B8;
+  width: 30em;
+  height: 15em;
+  border-radius: 3em;
+  padding: 2em;
+  opacity: .7;
+  font-family: 'Lemonada', cursive;
+  bottom: 4em;
+  left: 4em;
+}
+
+.reasonsToKeepASnake a {
+  position: absolute;
+  bottom: 2em;
+  right: 2em;
+  text-align: center;
+  display: block;
+  text-decoration: none;
+  color: #E1D3B8;
+  background-color: black;
+  padding: .2em 1.1em;
+  border-radius: 3em;
+  width: 10em;
+}
+
+.reasonsToKeepASnake a:hover {
+  text-decoration: underline;
+}
+
+.reasonsToKeepASnake li {
+  border-color: #E1D3B8;
+}
+
+.reasonsToKeepASnake li:after {
+  background-color: #E1D3B8;
+}
+
+.reasonsToKeepASnake li:nth-child(2) {
+  background-color: #E1D3B8;
+  border-color: #E1D3B8;
+}
+
+
+/* Afraid of Snakes? */
+
+section.afraidOfSnakes {
+  min-height: 100vh;
+  background-image: url("img/afraidOfSnakesBackground.jpg");
+  background-size: cover;
+  background-position: center;
+  text-align: right;
+  position: relative;
+}
+
+
+.afraidOfSnakes h2 {
+  color: #D5A065;
+  font-size: 6em;
+  font-weight: normal;
+  text-shadow: 4px 4px 12px black;
+  font-family: 'Ranchers', cursive;
+  top: .7em;
+  right: 1.4em;
+  position: relative;
+}
+
+.afraid3 {
+  position: relative;
+}
+
+.of3 {
+  position: relative;
+  right: 1.1em;
+}
+
+.snakes3 {
+  position: relative;
+}
+
+.afraidOfSnakes .textbox {
+  position: absolute;
+  text-align: left;
+  display: inline-block;
+  background-color: #E1D3B8;
+  width: 30em;
+  height: 20em;
+  border-radius: 3em;
+  padding: 2em;
+  opacity: .7;
+  font-family: 'Lemonada', cursive;
+  bottom: 4em;
+  right: 8em;
+}
+
+.afraidOfSnakes a {
+  position: absolute;
+  bottom: 2em;
+  right: 2em;
+  text-align: center;
+  display: block;
+  text-decoration: none;
+  margin-top: 2em;
+  color: #E1D3B8;
+  background-color: black;
+  padding: .2em 1.1em;
+  border-radius: 3em;
+  width: 10em;
+}
+
+.afraidOfSnakes a:hover {
+  text-decoration: underline;
+}
+
+.afraidOfSnakes li {
+  border-color: #D5A065;
+}
+
+.afraidOfSnakes li:after {
+  background-color: #E1D3B8;
+}
+
+.afraidOfSnakes li:nth-child(3) {
+  background-color: #D5A065;
+  border-color: #D5A065;
+}
+
+
+
+/* Best beginner Snakes */
+
+section.bestBeginnerSnakes {
+  min-height: 100vh;
+  background-image: url("img/bestBeginnerSnakesBackground.jpg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  text-align: right;
+}
+
+
+.bestBeginnerSnakes h2 {
+  color: #DABF67;
+  font-size: 6em;
+  margin-left: .7em;
+  top: .7em;
+  font-weight: normal;
+  text-shadow: 4px 4px 12px black;
+  font-family: 'Ranchers', cursive;
+  position: relative;
+  text-align: left;
+}
+
+.best4 {
+  position: relative;
+}
+
+.beginner4 {
+  position: relative;
+}
+
+.snakes4 {
+  position: relative;
+}
+
+.bestBeginnerSnakes .textbox {
+  position: absolute;
+  display: inline-block;
+  text-align: left;
+  display: inline-block;
+  background-color: #A57D58;
+  width: 30em;
+  height: 15em;
+  border-radius: 3em;
+  padding: 2em;
+  opacity: .7;
+  font-family: 'Lemonada', cursive;
+  bottom: 4em;
+  right: 4em;
+}
+
+.bestBeginnerSnakes a {
+  position: absolute;
+  bottom: 2em;
+  right: 2em;
+  text-align: center;
+  display: block;
+  text-decoration: none;
+  /* margin-top: 1em;
+  margin-left: 14.5em;
+  margin-right: 2em; */
+  color: #E1D3B8;
+  background-color: black;
+  padding: .2em 1.1em;
+  border-radius: 3em;
+  width: 10em;
+}
+
+.bestBeginnerSnakes a:hover {
+  text-decoration: underline;
+}
+
+.bestBeginnerSnakes li {
+  border-color: #DABF67;
+}
+
+.bestBeginnerSnakes li:after {
+  background-color: #A57D58;
+}
+
+.bestBeginnerSnakes li:nth-child(4) {
+  background-color: #DABF67;
+  border-color: #DABF67;
+}
+
+
+/* ANIMATIONS */
+
+.transition-fade {
+  transition: 700ms;
+  opacity: 1;
+}
+
+html.is-animating .transition-fade {
+  opacity: .5;
+  transform: translateY(100%)
+}
+
+html.is-leaving .transition-fade {
+  opacity: .5;
+  transform: translateX(-100%)
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width: 120em) {
+  section.petSnakes {
+    background-image: url("img/petSnakesBackground1920.jpg");
+  }
+
+  section.reasonsToKeepASnake {
+    background-image: url("img/reasonsToKeepASnakeBackground1920.jpg");
+  }
+
+  section.afraidOfSnakes {
+    background-image: url("img/afraidOfSnakesBackground1920.jpg");
+  }
+
+  section.bestBeginnerSnakes {
+    background-image: url("img/bestBeginnerSnakesBackground1920.jpg");
+  }
+
+
+}
+
+@media (max-width: 90em) {
+
+  .wrapper span {
+    font-size: 14em;
+  }
+
+  .reasonsToKeepASnake .reasons2 {
+    position: relative;
+    top: .3em;
+    left: .3em;
+  }
+
+  .reasonsToKeepASnake .tokeep2 {
+    position: relative;
+    top: .3em;
+    left: 2em;
+  }
+
+  .reasonsToKeepASnake .asnake2 {
+    position: relative;
+    top: .3em;
+    left: 3.15em;
+  }
+
+
+}
+
+@media (max-width: 64em) {
+  body {
+    font-size: .9em;
+  }
+
+}
+
+@media (max-width: 48em) {
+  body {
+    font-size: .7em;
+  }
+
+}
+
+
+@media (max-width: 40em) {
+  span {
+    font-size: 10em;
+    right: .05em;
+  }
+
+  h2 span {
+    font-size: .7em;
+  }
+
+  .reasonsToKeepASnake .textbox {
+    width: 27em;
+  }
+
+  .reasonsToKeepASnake a {
+    margin-left: 10em;
+  }
+
+  * {
+    margin-right: 0;
+  }
+
+  h2 {
+    line-height: .7em;
+  }
+
+  .afraidOfSnakes .textbox {
+    height: 19em;
+  }
+
+
+}
+
+@media (max-width: 37.5em) {
+  .wrapper span {
+    font-size: 13em;
+  }
+
+}
+
+@media (max-width: 30em) {
+
+  body {
+    font-size: .6em;
+  }
+}
+
+
+@media (max-width: 28.125em) {
+
+  body {
+    font-size: .6em;
+  }
+
+
+
+}
+
+@media (max-width: 25.75em) {
+
+  body {
+    font-size: .6em;
+  }
+
+
+  .wrapper span {
+    font-size: 10em;
+  }
+
+
+}
+
+@media (max-width: 22.5em) {
+
+  body {
+    font-size: .55em;
+  }
+
+}
+
+@media (max-width: 20em) {
+
+  body {
+    font-size: .4em;
+  }
+
+}
