@@ -1,7 +1,5 @@
 import TouchSweep from "./touchsweep.js"
 
-const swup = new Swup
-
 const debounce = (fn, delay) =>
 {
   let timeout
@@ -113,3 +111,25 @@ el.addEventListener('tap', event =>
   console.log("Tapped")
 
 });
+
+
+/* ANIMATIONS  */
+
+const section = document.querySelector("section")
+const spans = document.querySelectorAll("span")
+const textbox = document.querySelector(".textbox")
+const link = document.querySelector("a")
+const pageIndicator = document.querySelector("ul")
+
+
+const tl = gsap.timeline()
+
+console.log("loaded")
+tl.fromTo(section, .1, {width: "0"}, {width: "100%", ease: Power2.easeInOut})
+tl.fromTo(section, .1, {x: "-100%"}, {x: "0", ease: Power2.easeInOut})
+tl.fromTo(spans, 1.8, {display: "inline-block", x: "30", opacity: 0}, {x: "0", opacity: "100%", ease: Power2.easeInOut})
+tl.fromTo(textbox, 1.8, {x: "30", opacity: 0}, {x: "0", opacity: "100%", ease: Power2.easeInOut}, "-=1.8")
+tl.fromTo(link, 1, {opacity: 0, y: 10}, {opacity: "100%", y: 0, ease: Power2.easeInOut}, "-=1")
+tl.fromTo(pageIndicator, 1, {opacity: 0, x: 30}, {opacity: "100%", x: 0}, "-=1")
+
+
