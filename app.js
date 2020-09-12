@@ -85,9 +85,8 @@ el.addEventListener('swipedown', event =>
   if (sections[position - 1])
   {
     position--
-    sections.forEach(e => e.style.display = "none")
-    sections[position].style.display = "block"
     console.log(position)
+    sections[position].click()
   }
 });
 
@@ -100,8 +99,7 @@ el.addEventListener('swipeup', event =>
   {
     position++
     console.log(position)
-    sections.forEach(e => e.style.display = "none")
-    sections[position].style.display = "block"
+    sections[position].click()
   }
 });
 
